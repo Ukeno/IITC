@@ -1,0 +1,145 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 10vw;
+  min-height: 10vh;
+}                  
+
+header {
+  flex-grow: 1;
+  min-width: 2vw;
+  max-height: 17vh;
+  padding: 1px;
+  background-color: whitesmoke;
+}
+
+.img {
+  display: flex; /*<--required--*/
+   
+}
+
+.IITC {
+  flex: 1; /*--required--*/
+  position: relative;
+  left: 117px;
+  bottom: 110px;
+  width: 50%;
+  font-size: x-large;
+  
+}
+/*-- End of header --*/
+
+/*-- Alert block --*/
+.alert-block {
+  min-height: 3vh;
+  flex-grow: 3;
+  background-color: lightblue;
+  opacity: 0.97;
+  margin: 10px 0px 10px;
+  padding: 15px;
+}
+
+body {
+  margin: 17px 50px 17px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url("./assets/map-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  min-height: 60vh;
+  flex-grow: 5;
+  margin: 10px 0px 10px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+/*--Top of nav bar*/
+.list-group-items {
+  min-width: 10vw;
+  min-height: 10vh; /*Good mobile view*/
+  padding: 2px;
+  background-color: whitesmoke;
+
+}
+
+.list-group-item1 {
+  display: flex;
+  margin: 5px 5px 5px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.wrapper {
+  border: .5px ridge gray;
+  margin: 0px 2% 20px;
+  border-radius: 5px;
+}
+
+.list-group-item2 {
+  display: flex;
+  margin: 5px 20px 5px;
+  padding: 10px;
+  border-bottom: .4px solid gray;
+}
+
+.text-muted {
+  display: flex;
+  margin: 19px;
+  padding: 1px;
+  border: 0px solid gray;
+ }
+
+.list-group-item3 {
+  display: flex;
+  margin: 5px 5px 5px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+footer {
+  background-color: lightpink;
+  flex-grow: 1;
+  padding: 15px;
+  opacity: 12;
+}
+/*-- Bottom of navigation bar --*/
+/*
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  }                  
+*/
+
+  @media (min-width: 100vh) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .list-group-items {
+    min-height: 1%;  
+    min-width: 10%;
+    padding: 3%;  
+    margin: 3%;
+    }
+    main {
+      max-width: 60%;
+      min-height: 12%;
+      margin: 40px 10px -99px 100px;
+    }
+
+    header {
+      min-width: 98%;
+      min-height: 30%;
+      padding: 10px;
+    }
+    footer {
+      width: 100%;
+      height: 50%;
+      margin: 178px 0px 0px;
+    }
+  }     
